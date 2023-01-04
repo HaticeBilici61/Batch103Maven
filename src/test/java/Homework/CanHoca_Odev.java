@@ -10,7 +10,7 @@ import utilities.TestBase;
 import java.util.List;
 import java.util.Set;
 
-public class CnaHOca_Odev extends TestBase {
+public class CanHoca_Odev extends TestBase {
     //go to web site : https://www.jqueryscript.net/demo/Easy-iFrame-based-Twitter-Emoji-Picker-Plugin-jQuery-Emoojis/
     //maximize the web site
     // ikinci emojiye tıklayın
@@ -33,7 +33,12 @@ public class CnaHOca_Odev extends TestBase {
 
         // ikinci emoji altındaki tüm öğelere tıklayın
        driver.findElement(By.xpath("(//span[@data-upgraded=',MaterialRipple'])[2]")).click();
-       List<WebElement> emojiler= driver.findElements(By.xpath("//div[@id='nature']//div//img"));
+       List<WebElement> emojiler= driver.findElements(By.xpath("//div[@id='nature']//div/img"));
+       for (WebElement w:emojiler){
+           w.click();
+       }
+       //Lambda ile ==> emojiler.stream().forEach(t-> t.click());
+
 
         // ana iframe'e geri dön
         driver.switchTo().defaultContent();
