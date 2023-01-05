@@ -1,4 +1,4 @@
-package day08_IfRame;
+package day08_IFrame;
 
 import org.junit.Assert;
 import org.junit.Test;
