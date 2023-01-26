@@ -31,24 +31,38 @@ public class CanHoca_6Ocak extends TestBase {
 
             //Log the following values for each size .Size information .Price .Color .Stock status....
 
-        waitFor(1);
-        String model= driver.findElement(By.xpath("//span[@id='productTitle']")).getText();
-        System.out.println("model = " + model);
-
-        String size = driver.findElement(By.xpath("(//p[@class='a-text-left a-size-base'])[3]")).getText();
-        System.out.println("size = " + size);
-
-        String fiyat= driver.findElement(By.xpath("//div[@class='a-section a-spacing-none aok-align-center']")).getText();
-        System.out.println("fiyat = " + fiyat);
-
-        String stock = driver.findElement(By.xpath("//*[@class='a-size-medium a-color-success']")).getText();
-        System.out.println("stock = " + stock);
-
-
+        List<WebElement> boyutlar = driver.findElements(By.xpath("(//ul[@class='a-unordered-list a-nostyle a-button-list a-declarative a-button-toggle-group a-horizontal dimension-values-list'])[2]//li[@data-asin]"));
+        List<WebElement> renkler = driver.findElements(By.xpath("(//ul[@class='a-unordered-list a-nostyle a-button-list a-declarative a-button-toggle-group a-horizontal dimension-values-list'])[1]//li[@data-asin]"));
+        renkler.stream().forEach(t-> System.out.println(t.getText()));
+        for (int i = 0; i < renkler.size(); i++) {
+            renkler.get(i).click();
+            waitFor(2);
+            for (int j = 0; j < boyutlar.size(); j++) {
+                waitFor(2);
+                if (!boyutlar.get(j).getText().contains("Mevcut")) {
+                    boyutlar.get(j).click();
+                    waitFor(2);
+                    driver.findElement(By.xpath("//input[@id='add-to-cart-button']")).click();
+                    waitFor(2);
+                    driver.findElement(By.xpath("//a[@id='attach-close_sideSheet-link']")).click();//alisverise devam etmek icin acilan sayfayi kapatir
+                    System.out.println();
+                }
+            }
         }
-
-
+        driver.findElement(By.xpath("//span[@id='nav-cart-count']")).click();
+        List<WebElement>w=driver.findElements(By.xpath("//span[@class='a-list-item']"));//konsolda gormek istedigimiz tum bilgileri bir list icine attik
+        waitFor(1);
+        w.add(driver.findElement(By.xpath("//span[text()='Fiyat']")));//fiyat ismini eklrdik
+        w.add(driver.findElement(By.xpath("//*[@class='a-size-medium a-color-base sc-price sc-white-space-nowrap sc-product-price a-text-bold']")));//fiyatin kendisini yazdirdik
+        waitFor(1);
+        w.stream().skip(4).filter(t->!t.getText().startsWith("B")).forEach(t-> System.out.println(t.getText()));
     }
+
+
+}
+
+
+
 
 
 

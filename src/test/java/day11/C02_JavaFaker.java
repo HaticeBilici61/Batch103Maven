@@ -55,6 +55,7 @@ Test datalarini kimden alinir?
 9. Java Faker da fake data almak icin kullanyoruz
 NERDEN GELMEZ : end user -kullanicidan, scrum master,
  */
+
     }
     }
 

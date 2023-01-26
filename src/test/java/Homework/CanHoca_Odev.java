@@ -139,12 +139,14 @@ public class CanHoca_Odev extends TestBase {
       String expectedmetin="Please select an item from left to start practice.";
       Assert.assertEquals(expectedmetin,actualmetin);
 
+       waitFor(3);
        //Sol'da açılan Menu den ""Browser Windows"" butonuna click yap
         driver.findElement(By.xpath("(//*[@id='item-0'])[3]")).click();
 
         // //New Tab butonunun görünür olduğunu doğrula
        WebElement newtab= driver.findElement(By.id("tabButton"));
-       Assert.assertTrue(newtab.isDisplayed());
+      Assert.assertTrue(newtab.isDisplayed());
+      waitFor(3);
 
         //New Tab butonuna click yap
         newtab.click();

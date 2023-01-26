@@ -23,7 +23,7 @@ public class C01_TestBaseDemo extends TestBase {
     public void test01() {
         /*
         *TestBase i abstract yapmamizin sebebi bu sinifin objesini olusturmak istemiyorum
-        * TesBase tsetBase=new TestBase yapilmaz
+        * TesBase testBase=new TestBase yapilmaz
         * Amacim bu sinifi extends etmek ve icindeki hazir methodlari kullanmak
          */
         //techproeducation anasayfasina git ve title in Bootcamps kelimesi icerdigini test edin

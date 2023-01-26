@@ -3,7 +3,7 @@ package ErolHoca_Practice;
 import org.junit.Test;
 import utilities.TestBase;
 
-public class C01_BasicAuthentication extends TestBase {
+public class C16_BasicAuthentication extends TestBase {
     @Test
     public void basicAuthentication(){
         /*
@@ -19,5 +19,11 @@ public class C01_BasicAuthentication extends TestBase {
     garanti edilmek istenebilir. Ayrıca bazı bölgesel / ülke veya alan spesifik hizmetlerde kullanılmakta,
     örneğin bankaların online bankacılık hizmetleri, sağlık hizmetleri, kamu hizmetleri, e-devlet hizmetleri gibi.
      */
+        //http://httpbin.org/basic-auth/foo/bar adresine gidiniz
+        driver.get(" //http://foo:bar@httpbin.org/basic-auth/foo/bar");
+        //Username  : foo
+        //password  : bar
+        //Yukardaki verileri kullanarak güvenliği geçin
+
     }
 }
