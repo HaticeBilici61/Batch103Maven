@@ -240,7 +240,7 @@ public abstract class TestBase {
     }
 
 
-    //SCROLINTOVIEWJS
+    //SCROLINTOVIEWJS // istenilen elementin uzerine gidiyor
     //@param:Webelement
     public void scrollIntoViewJS(WebElement element){
         JavascriptExecutor js=(JavascriptExecutor)driver;

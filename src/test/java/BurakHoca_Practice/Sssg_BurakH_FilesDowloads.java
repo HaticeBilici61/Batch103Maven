@@ -1,4 +1,4 @@
-package day12_File;
+package BurakHoca_Practice;
 
 import org.junit.Assert;
 import org.junit.Test;

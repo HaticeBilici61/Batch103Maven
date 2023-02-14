@@ -16,7 +16,7 @@ public class C08_WindowHandels extends TestBase {
 
         // 'https://www.n11.com' adresine gidin
         driver.get("https://www.n11.com");
-     //   String sayfa1Handle=driver.getWindowHandle();
+       //   String sayfa1Handle=driver.getWindowHandle();
 
         // arama motoruna 'oppo' yazıp aratın
         driver.findElement(By.xpath("//input[@id='searchData']")).sendKeys("oppo"+ Keys.ENTER);
@@ -31,13 +31,13 @@ public class C08_WindowHandels extends TestBase {
         Assert.assertTrue(ikincisayfa.contains("Oppo"));
 
 
-//        //diger yol
-//        Set<String> windowHandleSeti=driver.getWindowHandles();
-//        String sayfa2Handle="";
-//        for (String each:windowHandleSeti) {
-//            if(!each.equals(sayfa1Handle)){
-//
-//                sayfa2Handle=each;
+        //        //diger yol
+        //       Set<String> windowHandleSeti=driver.getWindowHandles();
+        //        String sayfa2Handle="";
+        //        for (String each:windowHandleSeti) {
+        //            if(!each.equals(sayfa1Handle)){
+        //
+        //                sayfa2Handle=each;
 
 
 
