@@ -26,7 +26,8 @@ public class C01_ExcelRead {
 //        Excel Yazdırma
 //        Microsoft dosyalari ile iletişime gecmek icin apache poi dependency’s kullanılır
 //        Su anki projende exceli nasil kullandin?
-//        Test caselerimde çeşitli datalar kullanıyorum. Ornegin kullanıcı adi, kullanıcı şifresi gibi dataları excelde tutuyoruz. Bu datalari test caselerde kullanmak icin excelden çekiyorum ve test caselerimde kullanıyorum.
+//        Test caselerimde çeşitli datalar kullanıyorum. Ornegin kullanıcı adi, kullanıcı şifresi gibi dataları excelde tutuyoruz.
+//        Bu datalari test caselerde kullanmak icin excelden çekiyorum ve test caselerimde kullanıyorum.
 //        Datalari excelde tutmanı faydası, dataların derli toplu bir yerde olması, data güvenliği, data kayıplarına engel olmak.
 //
 

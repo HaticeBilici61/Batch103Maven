@@ -33,11 +33,11 @@ public class C08_WindowHandels extends TestBase {
 
         //        //diger yol
         //       Set<String> windowHandleSeti=driver.getWindowHandles();
-        //        String sayfa2Handle="";
-        //        for (String each:windowHandleSeti) {
-        //            if(!each.equals(sayfa1Handle)){
+        //       String sayfa2Handle="";
+        //       for (String each:windowHandleSeti) {
+        //       if(!each.equals(sayfa1Handle)){
         //
-        //                sayfa2Handle=each;
+        //       sayfa2Handle=each;
 
 
 

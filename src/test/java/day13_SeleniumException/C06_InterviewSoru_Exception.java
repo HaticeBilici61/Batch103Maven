@@ -19,7 +19,9 @@ public class C06_InterviewSoru_Exception {
 
        Explicitwait elemente ouzel yazilabilir. Yerel cozum gerektiğinde explicit wait I kullanmak zorundayiz.
        Senkronize(bekleme) problemlerini nasıl çözersin
-       Selenium waitlerini kullanarak. Implicit wait driver im da var, ama yetmedigi durumlarda explicit wait kullanirim. Bu yüzden ReusableMethod sinifimda tekrar tekrar kullanabileceğimiz explicit wait method lari var. Kolaylıkla explicit wait ile bekleme problemlerini cozebuliyoruz.
+       Selenium waitlerini kullanarak. Implicit wait driver im da var, ama yetmedigi durumlarda explicit wait kullanirim.
+        Bu yüzden ReusableMethod sinifimda tekrar tekrar kullanabileceğimiz explicit wait method lari var.
+        Kolaylıkla explicit wait ile bekleme problemlerini cozebuliyoruz.
        Ausblenden
 
 
