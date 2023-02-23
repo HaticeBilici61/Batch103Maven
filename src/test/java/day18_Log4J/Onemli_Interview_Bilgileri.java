@@ -22,12 +22,12 @@ public class Onemli_Interview_Bilgileri {
 //    Arac/Gerecler(Tools)
 //    Selenium WebDriver
 //    Maven
-//            JUnit, TestNG, Cucumber
+//    JUnit, TestNG, Cucumber
 //    PostGreSQL
-//            JDBC
+//    JDBC
 //    IntelliJ, Eclipse, VS Code
 //    JIRA
-//            Jmeter
+//    Jmeter
 //    Postman
 //    Restful API
 //    Jenkins
