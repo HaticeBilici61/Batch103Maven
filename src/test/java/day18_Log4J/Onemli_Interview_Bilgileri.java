@@ -6,7 +6,7 @@ public class Onemli_Interview_Bilgileri {
 //    Frameworks:
 //    JUnit(gorduk), TestNG(Basliyoruz), Cucumber(Ogrenecez)
 //    Design Pattern:
-//    Page Object Model(POM)
+//    Page Object Model(POM).....Singleton Driver(utilitiest driver class olustur Driver.driver.getdriver)
 //    Version Control System:
 //    Git, Bitbucket(ucretli, kara ile entegresi daha guzel)
 //    Front End Testing:
